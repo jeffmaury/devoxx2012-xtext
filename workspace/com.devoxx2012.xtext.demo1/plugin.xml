@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://www.devoxx2012.com/xtext/demo1/Demo1" 
+       class = "com.devoxx2012.xtext.demo1.demo1.Demo1Package"
+       genModel = "com/devoxx2012/xtext/demo1/Demo1.genmodel" /> 
+	
+  </extension>
+
+
+
+
+</plugin>

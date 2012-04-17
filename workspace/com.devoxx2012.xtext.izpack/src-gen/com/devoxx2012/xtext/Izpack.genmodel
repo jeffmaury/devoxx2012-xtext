@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.devoxx2012.xtext.izpack/src-gen"
+    editDirectory="/com.devoxx2012.xtext.izpack.edit/src" editorDirectory="/com.devoxx2012.xtext.izpack.editor/src"
+    modelPluginID="com.devoxx2012.xtext.izpack" forceOverwrite="true" modelName="Izpack"
+    updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="com.devoxx2012.xtext.izpack.edit"
+    editorPluginID="com.devoxx2012.xtext.izpack.editor" usedGenPackages="../../../../../org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel#//types">
+  <genPackages prefix="Izpack" basePackage="com.devoxx2012.xtext" disposableProviderFactory="true"
+      ecorePackage="Izpack.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Izpack.ecore#//ISO3Code">
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/cat"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/chn"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/cze"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/dan"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/glg"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/deu"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/eng"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/eus"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/fin"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/fra"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/hun"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/ita"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/jpn"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/mys"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/ned"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/nor"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/pol"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/por"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/prt"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/rom"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/rus"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/scg"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/spa"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/svk"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/swe"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//ISO3Code/ukr"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Izpack.ecore#//OS">
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//OS/ALL"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//OS/UNIX"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//OS/WINDOWS"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//OS/MAC"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Izpack.ecore#//OverrideFlag">
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//OverrideFlag/TRUE"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//OverrideFlag/FALSE"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//OverrideFlag/ASKTRUE"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//OverrideFlag/ASKFALSE"/>
+      <genEnumLiterals ecoreEnumLiteral="Izpack.ecore#//OverrideFlag/update"/>
+    </genEnums>
+    <genClasses ecoreClass="Izpack.ecore#//Installer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Installer/identification"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Installer/authors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Installer/constraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Installer/uninstall"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Installer/summarylog"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Installer/installation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Installer/packaging"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Installer/variables"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Installer/packs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Installer/locale"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Installer/panels"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Locale">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Locale/isocodes"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Identification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Identification/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Identification/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Identification/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Identification/webdir"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Author">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Author/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Author/email"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Constraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Constraint/javaversion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Constraint/requiredJdk"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Constraint/packed"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Uninstall">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Uninstall/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Uninstall/path"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Option">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Option/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Option/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Packaging">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Packaging/class"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Packaging/options"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Variable/isDynamic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Variable/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Variable/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Pack">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Pack/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Pack/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Pack/optional"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Pack/loose"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Pack/keep"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Izpack.ecore#//Pack/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Pack/files"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Pack/os"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//File">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//File/path"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//File/alias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//File/destination"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//File/override"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//File/os"/>
+    </genClasses>
+    <genClasses ecoreClass="Izpack.ecore#//Panel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Panel/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Izpack.ecore#//Panel/classname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Izpack.ecore#//Panel/jar"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

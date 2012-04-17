@@ -1,0 +1,1 @@
+$IZPACK_HOME/bin/compile src-gen/first.xml -b . -h $IZPACK_HOME

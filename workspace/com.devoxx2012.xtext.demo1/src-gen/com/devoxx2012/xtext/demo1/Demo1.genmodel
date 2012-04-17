@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.devoxx2012.xtext.demo1/src-gen"
+    editDirectory="/com.devoxx2012.xtext.demo1.edit/src" editorDirectory="/com.devoxx2012.xtext.demo1.editor/src"
+    modelPluginID="com.devoxx2012.xtext.demo1" forceOverwrite="true" modelName="Demo1"
+    updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="com.devoxx2012.xtext.demo1.edit"
+    editorPluginID="com.devoxx2012.xtext.demo1.editor">
+  <genPackages prefix="Demo1" basePackage="com.devoxx2012.xtext.demo1" disposableProviderFactory="true"
+      ecorePackage="Demo1.ecore#/">
+    <genClasses ecoreClass="Demo1.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Demo1.ecore#//Model/categories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Demo1.ecore#//Model/rule"/>
+    </genClasses>
+    <genClasses ecoreClass="Demo1.ecore#//Category">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Demo1.ecore#//Category/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Demo1.ecore#//Rule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Demo1.ecore#//Rule/first"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Demo1.ecore#//Rule/next"/>
+    </genClasses>
+    <genClasses ecoreClass="Demo1.ecore#//RuleExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Demo1.ecore#//RuleExpression/test"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Demo1.ecore#//RuleExpression/ratio"/>
+    </genClasses>
+    <genClasses ecoreClass="Demo1.ecore#//TestExpression">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Demo1.ecore#//TestExpression/category"/>
+    </genClasses>
+    <genClasses ecoreClass="Demo1.ecore#//RatioExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Demo1.ecore#//RatioExpression/ratio"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

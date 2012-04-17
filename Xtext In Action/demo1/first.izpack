@@ -1,0 +1,17 @@
+installer for "My First Application" "1.1" site "http://www.devoxx.fr"
+by "Jeff MAURY" "jeffmaury@jeffmaury.com"
+   "Devoxx" "info@devoxx.fr"
+constraints "1.5" with jdk packed
+uninstall named "uninstall" path "${INSTALL_PATH}/Uninstaller"
+log on "${INSTALL_PATH}/install.log"
+packaging com.izforge.izpack.compiler.MultiVolumePackager options "Name" = "Value"
+               
+var myvar = "Value"
+pack Base "Base files"
+"src/resources/text" to "${INSTALL_PATH}/resources"
+locale English French
+display hello com.izforge.izpack.panels.HelloPanel "bin/panels/HelloPanel.jar"
+        install com.izforge.izpack.panels.InstallPanel "bin/panels/InstallPanel.jar"
+        datacheck com.izforge.izpack.panels.DataCheckPanel "bin/panels/DataCheckPanel.jar"
+        finish com.izforge.izpack.panels.FinishPanel "bin/panels/FinishPanel.jar"
+  

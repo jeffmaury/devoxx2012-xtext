@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src-gen"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="lib/compiler.jar"/>
+	<classpathentry kind="lib" path="lib/installer.jar"/>
+	<classpathentry kind="lib" path="lib/standalone-compiler.jar"/>
+	<classpathentry kind="lib" path="lib/panels/HelloPanel.jar"/>
+	<classpathentry kind="lib" path="lib/panels/InstallPanel.jar"/>
+	<classpathentry kind="lib" path="lib/panels/FinishPanel.jar"/>
+	<classpathentry kind="lib" path="lib/panels/DataCheckPanel.jar"/>
+	<classpathentry kind="lib" path="lib/panels/InfoPanel.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

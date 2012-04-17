@@ -1,0 +1,112 @@
+grammar com.devoxx2012.xtext.Izpack with org.eclipse.xtext.xbase.Xtype
+
+generate izpack "http://www.devoxx2012.com/xtext/Izpack"
+
+Installer:
+	"installer"
+	identification=Identification
+	("by" (authors+=Author)*)?
+	("constraints" constraint=Constraint)?
+	("uninstall" ("no" | (uninstall=Uninstall)))?
+	("log on" summarylog=STRING (installation?="write installation info")?)?
+	(packaging=Packaging)?
+	(variables+=Variable*)
+	packs+=Pack+
+	locale=Locale
+	"display" panels+=Panel+;
+
+enum ISO3Code:
+	cat="Catalunyan" |
+	chn="Chinese" |
+	cze="Czech" |
+	dan="Danish" |
+	glg="Galician" |
+	deu="German" |
+	eng="English" |
+	eus="Basque" |
+	fin="Finnish" |
+	fra="French" |
+    hun="Hungarian" |
+    ita="Italian" |
+    jpn="Japanese" |
+    mys="Malaysian" |
+    ned="Nederlands" |
+    nor="Norwegian" |
+    pol="Polnish" |
+    por="Portuguese (Brazilian)" |
+    prt="Portuguese (European)" |
+    rom="Romanian" |
+    rus="Russian" |
+    scg="Serbian" | 
+    spa="Spanish" |
+    svk="Slovakian" |
+    swe="Swedish" |
+    ukr="Ukrainian";
+    
+Locale:
+	"locale" isocodes+=ISO3Code+;
+
+Identification:
+	"for" name=STRING
+	      version=STRING
+	      ("site" url=STRING)?
+	      ("webroot" webdir=STRING)?;
+
+Author:
+	name=STRING email=STRING;
+
+Constraint:
+	javaversion=STRING
+	(requiredJdk?="with jdk")?
+	(packed?="packed")?;
+	
+Uninstall:
+	("named" name=STRING)?
+	/*("only if" condition=ID)? */
+	("path" path=STRING)?;
+	
+Option:
+  name=STRING '=' value=STRING;
+
+Packaging:
+	"packaging" class=JvmTypeReference
+	("options" options+=Option*)?;
+
+Variable:
+  ("val"|isDynamic?="var") name=ID "=" value=STRING;
+
+enum OS:
+	ALL="all"|
+	UNIX="unix" |
+	WINDOWS="windows" |
+	MAC="mac";
+	
+enum OverrideFlag:
+	TRUE="true" |
+	FALSE="false" |
+	ASKTRUE="asktrue" |
+	ASKFALSE="askfalse"|
+	update="update";
+	
+Pack:
+	"pack" name=ID label=STRING
+	(optional?="optional")?
+	(loose?="loose")?
+	(keep?="keep")?
+	(parent=[Pack])?
+	files+=File*
+	("on" os=OS)?;
+
+File:
+	path=STRING ("as" alias=STRING)? "to" destination=STRING ("override" override=OverrideFlag)? =>("on" os=OS)?;
+
+Panel:
+	name=ID classname=JvmTypeReference jar=STRING;
+
+
+
+
+
+
+
+	

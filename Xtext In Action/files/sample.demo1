@@ -1,0 +1,10 @@
+category junior
+category adult
+/*
+ * Un senior est un personne de plus de 60 ans
+ * <p>Voir <a href="http://fr.wikipedia.org/wiki/Senior">Wikipedia</a> 
+ */
+category senior
+if category is jen then ratio is 10
+else if category is adult then ratio is 15
+else ratio is 20

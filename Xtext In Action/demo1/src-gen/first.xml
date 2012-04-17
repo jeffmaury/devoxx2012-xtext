@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<installation version="1.0">
+  <info>
+    <appname>My First Application</appname>
+    <appversion>1.1</appversion>
+    <url>http://www.devoxx.fr</url>
+    <authors>
+    <author name="Jeff MAURY" email="jeffmaury@jeffmaury.com"/>
+    <author name="Devoxx" email="info@devoxx.fr"/>
+    </authors>
+    <uninstaller name="uninstall" path="${INSTALL_PATH}/Uninstaller"/>
+    <javaversion>1.5</javaversion>
+    <summarylogfile>${INSTALL_PATH}/install.log</summarylogfile>
+    <writeinstallationinformation>false</writeinstallationinformation>
+    <pack200/>
+  </info>
+  <locale>
+  <langpack iso3="ENG"/>
+  <langpack iso3="FRA"/>
+  </locale>
+  <panels>
+  <panel id="hello" classname="com.izforge.izpack.panels.HelloPanel" jar="bin/panels/HelloPanel.jar"/>
+  <panel id="install" classname="com.izforge.izpack.panels.InstallPanel" jar="bin/panels/InstallPanel.jar"/>
+  <panel id="datacheck" classname="com.izforge.izpack.panels.DataCheckPanel" jar="bin/panels/DataCheckPanel.jar"/>
+  <panel id="finish" classname="com.izforge.izpack.panels.FinishPanel" jar="bin/panels/FinishPanel.jar"/>
+  </panels>
+  <packs>
+  <pack id="Base" name="Base files" required="yes" loose="false" uninstall="yes">
+    <description/>
+    <file src="src/resources/text" targetdir="${INSTALL_PATH}/resources"/>
+  </pack>
+  </packs>
+  <guiprefs resizable="yes" width="800" height="600"/>
+</installation>

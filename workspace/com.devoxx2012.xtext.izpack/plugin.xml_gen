@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://www.devoxx2012.com/xtext/Izpack" 
+       class = "com.devoxx2012.xtext.izpack.IzpackPackage"
+       genModel = "com/devoxx2012/xtext/Izpack.genmodel" /> 
+	
+  </extension>
+
+
+
+
+</plugin>

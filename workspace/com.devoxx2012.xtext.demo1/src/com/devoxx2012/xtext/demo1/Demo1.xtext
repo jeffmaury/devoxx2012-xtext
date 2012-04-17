@@ -1,0 +1,23 @@
+grammar com.devoxx2012.xtext.demo1.Demo1 with org.eclipse.xtext.common.Terminals
+
+generate demo1 "http://www.devoxx2012.com/xtext/demo1/Demo1"
+
+Model:
+	categories+=Category+
+	rule=Rule;
+	
+Category:
+	'category' name=ID;
+	
+Rule:
+	first=RuleExpression
+	("else" next=(Rule | RatioExpression))?;
+
+RuleExpression:
+	"if" test=TestExpression "then" ratio=RatioExpression;
+
+TestExpression:
+	"category" "is" category=[Category];
+
+RatioExpression:
+    "ratio" "is" ratio=INT;
